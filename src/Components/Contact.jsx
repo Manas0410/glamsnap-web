@@ -19,8 +19,8 @@ const Contact = () => {
           bcc: "manasshrivastava0410@gmail.com,sanskratiagrawal306@gmail.com",
           subject: "THANK YOU FOR CONNECTING WITH GLAM SNAP",
           message:
-            "Thanks buddy 😘 ! Once we are live we will first notify you ",
-          information: "",
+            "Thanks buddy 😉 ! Once we are live we will first notify you ",
+          information: `<message<${message}>>`,
         }),
       });
     } catch (err) {
