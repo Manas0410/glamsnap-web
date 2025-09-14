@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./Section/Hero";
 import Header from "./Components/Header";
 import { ExpandableCardDemo } from "./Components/steps";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 const App = () => {
   return (
@@ -10,9 +12,9 @@ const App = () => {
       <div className="w-full layout-padding">
         <Hero />
         <ExpandableCardDemo />
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
+        <Contact />
       </div>
+      <Footer />
     </div>
   );
 };

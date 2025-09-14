@@ -12,21 +12,21 @@ const Header = () => {
             GlamSnap
           </span>
         </div>
-        <div className="flex items-center md:gap-4 gap-2">
-          <button>
+        <div className="flex items-center md:gap-4 gap-2 cursor-pointer">
+          <a href="#contact">
             <img
               src={dowloadAppstore}
               alt="Download on the App Store"
               className="md:h-12 h-8"
             />
-          </button>
-          <button>
+          </a>
+          <a href="#contact">
             <img
               src={dowloadPlaystore}
               alt="Get it on Google Play"
               className="md:h-18 h-12"
             />
-          </button>
+          </a>
         </div>
       </div>
     </header>
