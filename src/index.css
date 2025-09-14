@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.layout-padding {
+  @apply w-full lg:px-16 px-6;
+}
