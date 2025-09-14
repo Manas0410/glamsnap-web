@@ -5,9 +5,31 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      setSubmitted(true);
+      const response = await fetch("https://my-emailservice.vercel.app/mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          tomail: email,
+          bcc: "manasshrivastava0410@gmail.com,sanskratiagrawal306@gmail.com",
+          subject: "THANK YOU FOR CONNECTING WITH GLAM SNAP",
+          message:
+            "Thanks buddy 😘 ! Once we are live we will first notify you ",
+          information: "",
+        }),
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setEmail("");
+      setMessage("");
+      setSubmitted(false);
+    }
   };
 
   return (
@@ -44,6 +66,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button
+          disabled={submitted}
           type="submit"
           className="bg-[#6d72c3] text-white font-bold py-3 rounded-lg text-lg hover:bg-[#5a61a8] transition"
         >
