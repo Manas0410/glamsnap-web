@@ -8,9 +8,9 @@ const Header = () => {
       <div className="flex items-center h-full justify-between  py-3 layout-padding max-sm:flex-col max-sm:gap-2">
         <div className="flex items-center gap-2 ">
           <img src={logo} alt="Logo" className="md:h-12 md:w-12 h-8 w-8" />
-          <span className="font-bold text-2xl md:text-4xl text-gray-800">
+          <a href="#" className="font-bold text-2xl md:text-4xl text-gray-800">
             GlamSnap
-          </span>
+          </a>
         </div>
         <div className="flex items-center md:gap-4 gap-2 cursor-pointer">
           <a href="#contact">

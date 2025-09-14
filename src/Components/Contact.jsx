@@ -38,7 +38,7 @@ const Contact = () => {
         />
         <textarea
           rows={4}
-          placeholder="Anything you'd like to add? (optional)"
+          placeholder="Anything you'd like to add? "
           className="border border-gray-300 rounded-md w-full px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#6d72c3]"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
