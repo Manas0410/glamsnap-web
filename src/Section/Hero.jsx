@@ -1,4 +1,5 @@
-import heroWeb from "../assets/hero-web-2.png";
+// import heroWeb from "../assets/hero-web-2.png";
+import heroWeb from "../assets/banner.png";
 import heroMobile from "../assets/hero-mobile-2.png";
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
       <img
         src={heroWeb}
         alt="banner"
-        className="hidden md:block w-full h-auto"
+        className="hidden md:block w-full h-auto my-18"
       />
 
       <img
