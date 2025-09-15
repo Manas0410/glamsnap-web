@@ -28,7 +28,7 @@ export function ExpandableCardDemo() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <section className="mt-28">
+    <section className="mt-14 md:mt-28">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
